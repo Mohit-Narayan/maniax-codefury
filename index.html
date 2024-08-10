@@ -75,6 +75,46 @@
         bottom: 0;
         width: 100%;
       }
+      @media (max-width: 768px) {
+        header {
+          height: auto;
+          text-align: center;
+        }
+        header h1 {
+          margin: 10px 0;
+          font-size: 1.5em;
+        }
+        header img {
+          display: block;
+          margin: 0 auto;
+          width: 80px;
+        }
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav a {
+          margin: 5px 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 14px;
+        }
+        nav a {
+          font-size: 14px;
+        }
+        header h1 {
+          font-size: 1.2em;
+        }
+        header img {
+          width: 60px;
+        }
+        main {
+          padding: 10px;
+        }
+      }
     </style>
  <body>
     <header>
