@@ -52,19 +52,21 @@
         font-weight: bold;
       }
       nav a:hover {
-        text-decoration: underline;
+        text-decoration: bold;
+        color: aquamarine;
       }
       main {
         padding: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: #f5f5f1;
+        max-width: 80%;
+        margin: auto;
+        background-color: #ffe39d;
       }
       section {
         margin-bottom: 20px;
       }
       h2 {
-        color: #0c0e0f;
+        color: #3c6e53;
+        font-size: 50px;
       }
       footer {
         background-color: #33b319;
@@ -79,11 +81,20 @@
         display:inline-block;
         width : 40%;
         text-align: justify;
+        font-size: 20px;
       }
 
       section input{
-        width : 25%;
+        width :75%;
         border-radius: 10px;
+        font-size: 20px;
+        
+      }
+      section textarea{
+        width :75%;
+        border-radius: 10px;
+        font-size: 20px;
+        
       }
 
       section label{
@@ -92,12 +103,113 @@
       }
 
       #submit{
+        display: block;
         width : 36%;
         border-radius: 10px;
+        margin: auto;
       }
 
       #submit:hover{
         cursor: pointer;
+      }
+
+      section{
+        
+        width: 90%;
+        
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 0%;
+      }
+
+      section img{
+        margin-left: 5%;
+        width :40%;
+        display : inline-block;
+      }
+      section ul{
+        display : inline-block;
+        width : 40%;
+        font-size: 20px;
+      }
+      section form{
+        display : inline-block;
+        width : 100%;
+        font-size: 20px;
+      }
+      .item_2 img{
+        margin-left :0px;
+        margin-right : 10px; 
+      }
+      .item_4 img{
+        margin-left :0px;
+        margin-right : 10px; 
+      }
+      .item_6 img{
+        margin-left :0px;
+        margin-right : 10px; 
+      }
+      /* .container
+      {
+          display :flex;
+          flex-wrap: wrap;
+      } */
+
+      .item_1 p{
+        display: inline-block;
+        margin-top: 0px;
+        padding-bottom:0px;
+      }
+      .item_2 p{
+        display : block;
+      }
+      .item_2 ul{
+        display: inline-block;
+        width: 40%;
+      }
+      .item_2 img{
+        width :40%;
+      }
+      .item_3 p{
+        display : block;
+        width: 90%;
+      }
+      .item_4 p{
+        display : block;
+        width: 90%;
+      }
+      .item_5 p{
+        display : block;
+        width: 90%;
+      }
+      .item_6 p{
+        display : block;
+        width: 90%;
+      }
+      .iframecontain{
+        display: inline-block;
+        position: relative;
+        width : 45%;
+        height : 470px;
+        overflow: hidden;
+      }
+      .iframecont{
+        display: inline-block;
+        position: sticky;
+        width: 1500px;
+        height: 2000px;
+        left: 10px;
+        top: 10px;
+      }
+      #forr{
+        display: inline-block;
+      
+        background-color: rgb(191 188 132);
+        border-radius: 50px;
+        padding: 10px;
+        
+        
       }
       @media (max-width: 768px) {
         header {
@@ -156,20 +268,28 @@
     </nav>
 
     <main>
-      <section id="introduction">
-        <h2>Introduction</h2>
-        <p>
-          Natural disasters can strike at any time, causing widespread damage
-          and loss of life. Proper planning and preparedness can help mitigate
-          the effects of these disasters. At disaster management work we believe
-          that prevention is better than cure and hence work towards providing
-          informantion to people on how to avoid the damages caused by Natural dsaster
-          or get affected by them in minor manner.
-        </p>
-      </section>
 
-      <section id="types">
+      <div class="container">
+<div class="item_1">
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+      Natural disasters can strike at any time, causing widespread damage
+      and loss of life. Proper planning and preparedness can help mitigate
+      the effects of these disasters. At disaster management work we believe
+      that prevention is better than cure and hence work towards providing
+      informantion to people on how to avoid the damages caused by Natural dsaster
+      or get affected by them in minor manner.
+    </p>
+    <img src="images/wildfire.jpg" alt="">
+  </section><br>
+</div>
+<div class="item_2">
+      
+  <section id="types">
         <h2>Types of Natural Disasters</h2>
+        <img src="/images/hurricane.jpg" alt="hurricane">
         <ul>
           <li>Earthquakes</li>
           <li>Floods</li>
@@ -178,8 +298,11 @@
           <li>Cyclones</li>
           <li>Land Slides</li>
         </ul>
-      </section>
-
+        
+      </section><br>
+    </div>
+    <div class="item_3">
+      
       <section id="preparedness">
         <h2>Preparedness Tips</h2>
         <p>
@@ -199,22 +322,32 @@
           <li>Secure your home by reinforcing windows, doors, and roofs.</li>
           <li>look out in internet and other media sources for the information regarding the upcoming disasters.</li>
         </ul>
-      </section>
+        <div class="iframecontain">
 
+          <iframe src="https://mausam.imd.gov.in/" scrolling ="no" class="iframecont"></iframe>
+        </div>
+        </section><br>
+    </div>
+    <div class="item_4">
       <section id="contacts">
         <h2>Emergency Contacts</h2>
         <p>In case of an emergency, contact the following organizations:</p>
+        <img src="/images/earthquake.jpg" alt="contact">
         <ul>
           <li>Local Emergency Services: 112</li>
           <li>National Disaster Response Force NDRF: 011-23438017</li>
           <li>National Disaster Management Authority NDMA : +91-11-26701700</li>
         </ul>
-      </section>
+        
+      </section><br>
+    </div>
+    <div class="item_5">
 
+      
             <section id="Contactus">
         <h2>Contact Us</h2>
-        <form action="submitQuery" method="post">
-            <label for="name">Name:</label>
+        <form action="submitQuery" method="post" id="forr">
+          <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter Name"><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Enter Email"><br>
@@ -223,25 +356,30 @@
             <label for="query">Your Query:</label>
             <textarea id="query" name="query_text" required placeholder="Enter Query"></textarea><br>
             <input type="submit" value="Submit" id="submit">
-        </form>
-      </section>
         
-
+      </section><br>
+    </div>
+    <div class="item_6">
+      
       <section id="resources">
         <h2>Additional Resources</h2>
         <p>
           For more information on disaster preparedness and response, visit the
           following websites:
         </p>
+        <img src="/images/tsunami.jpg" alt="contact">
         <ul>
-          <li><a href="https://www.ndma.gov.in/">National Disaster Mangement Authority</a></li>
-          <li><a href="https://ksdma.karnataka.gov.in/english">Karnataka State Disaster Management Authority</a></li>
-          <li><a href="https://mausam.imd.gov.in/">Metrological department of India</a></li>
-          <li><a href="https//:ndrf.gov.in">NDRF</a></li>
+          <li><a href="https://www.ndma.gov.in/" target="_blank">National Disaster Mangement Authority</a></li>
+          <li><a href="https://ksdma.karnataka.gov.in/english" target="_blank">Karnataka State Disaster Management Authority</a></li>
+          <li><a href="https://mausam.imd.gov.in/" target="_blank">Metrological department of India</a></li>
+          <li><a href="https://ndrf.gov.in" target="_blank">National Disaster Response Force</a></li>
         </ul>
-      </section>
+      </section><br>
+    </div>
+      
+    </div>
     </main>
-
+    
     <footer>
       <p>&copy; 2024 Disaster Check. All Rights Reserved.</p>
     </footer>
