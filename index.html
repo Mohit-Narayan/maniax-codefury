@@ -75,6 +75,30 @@
         bottom: 0;
         width: 100%;
       }
+            section p{
+        display:inline-block;
+        width : 40%;
+        text-align: justify;
+      }
+
+      section input{
+        width : 25%;
+        border-radius: 10px;
+      }
+
+      section label{
+        display : inline-block;
+        width: 10%;
+      }
+
+      #submit{
+        width : 36%;
+        border-radius: 10px;
+      }
+
+      #submit:hover{
+        cursor: pointer;
+      }
       @media (max-width: 768px) {
         header {
           height: auto;
@@ -185,6 +209,22 @@
           <li>National Disaster Management Authority NDMA : +91-11-26701700</li>
         </ul>
       </section>
+
+            <section id="Contactus">
+        <h2>Contact Us</h2>
+        <form action="submitQuery" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Email"><br>
+            <label for="phone">Phone :</label>
+            <input type="text" id="phone" name="phone_number" required placeholder="Enter Mobile no"><br>
+            <label for="query">Your Query:</label>
+            <textarea id="query" name="query_text" required placeholder="Enter Query"></textarea><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+      </section>
+        
 
       <section id="resources">
         <h2>Additional Resources</h2>
