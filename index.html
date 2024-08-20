@@ -318,6 +318,57 @@
       }
     }
   </style>
+  <script>
+  // Wait for the DOM to fully load before running the script
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Get the form element
+    const form = document.getElementById('forr');
+
+    // Add an event listener for form submission
+    form.addEventListener('submit', function(event) {
+      // Prevent the form from submitting the traditional way
+      event.preventDefault();
+
+      // Collect form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const query = document.getElementById('query').value;
+
+      // Display collected data in the console (for testing purposes)
+      console.log('Name:', name);
+      console.log('Email:', email);
+      console.log('Phone:', phone);
+      console.log('Query:', query);
+
+      // Optionally, you can send the form data to a server using AJAX
+      // Here's an example using the Fetch API
+      fetch('/submitQuery', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone,
+          query: query,
+        }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        alert('Form submitted successfully!');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
+      });
+    });
+  });
+</script>
+
 
 <body>
   <header>
